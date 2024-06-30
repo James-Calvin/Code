@@ -1,0 +1,26 @@
+/*
+Title: ComplexNumber
+Author: James-Calvin
+Date: 2024-06-30
+Code Version: Pre-alpha
+Description: This file is not meant to be compilable as there are currently no 
+  implementation of Code. This program is only intended to serve as a language 
+  feature brainstorming exercise. This program may not accurately represent or follow
+  the current rules for this language.
+
+   This is an example of a Unit Interval datatype. The idea is to allow the developer
+   to be able to think in percentages, but the underlying math using only integer
+   values. For this, I have found the superior highly composite number of
+   18401055938125660800
+   using this number will utilize 99.7% of an uint64, but will have the added benefit
+   of being able to exactly express common fractional amounts due to its 184320 
+   factors. 
+   
+   https://oeis.org/A002201 
+   https://replit.com/@JamesCalvin/FindAllFactors#factors_of_18401055938125660800.txt
+   https://en.wikipedia.org/wiki/Superior_highly_composite_number
+
+*/
+
+
+UnitInterval chance = 0.5; // UnitInterval is a normalized integer value (int64 x / int64.maxValue) 

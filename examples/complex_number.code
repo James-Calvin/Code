@@ -1,0 +1,76 @@
+/*
+Title: ComplexNumber
+Author: James-Calvin
+Date: 2024-06-30
+Code Version: Pre-alpha
+Description: This file is not meant to be compilable as there are currently no 
+  implementation of Code. This program is only intended to serve as a language 
+  feature brainstorming exercise. This program may not accurately represent or follow
+  the current rules for this language.
+  
+  This is a simple implementation of a complex number class which highlights some
+  desired features of Code.
+*/
+
+// include Console
+// include ComplexNumber
+
+class ComplexNumber {
+
+  // "public get" implies "public get private set" nothing implies "private get set"
+  public get double Real;
+  public get double Imaginary;
+
+  constructor(double real, double imaginary){
+    Real = real;
+    Imaginary = imaginary; 
+  }
+
+  // Implicitly constructs a ComplexNumber from a real
+  operator imply(double real){
+    return new ComplexNumber(real, 0)
+  }
+
+  // operators are implicitly public, static, and return the same type
+  operator -(ComplexNumber a){
+    return new ComplexNumber(a.Real * -1, a.Imaginary * -1);
+  }
+
+  // This more verbose header has the same behavior as default
+  public static ComplexNumber operator +(ComplexNumber a){
+    return new ComplexNumber(a.Real, a.Imaginary);
+  }
+
+  operator +(ComplexNumber a, ComplexNumber b){
+    return new ComplexNumber(a.Real + b.Real, a.Imaginary + b.Imaginary);
+  }
+
+  operator -(ComplexNumber a, ComplexNumber b){
+    return new ComplexNumber(a.Real - b.Real, a.Imaginary - b.Imaginary);
+  }
+
+  operator *(ComplexNumber a, ComplexNumber b) {
+    double real = a.Real * b.Real - a.Imaginary * b.Imaginary;
+    double imaginary = a.Real * b.Imaginary + a.Imaginary * b.Real;
+    return new ComplexNumber(real, imaginary);
+  }
+
+  operator /(ComplexNumber a, ComplexNumber b) {
+    double divisor = b.Real * b.Real + b.Imaginary * b.Imaginary;
+    double real = (a.Real * b.Real + a.Imaginary * b.Imaginary) / divisor;
+    double imaginary = (a.Imaginary * b.Real - a.Real * b.Imaginary) / divisor;
+    return new ComplexNumber(real, imaginary);
+  }
+
+}
+
+void Main(){
+  ComplexNumber num1 = new ComplexNumber(1, 2);
+  ComplexNumber num2 = new ComplexNumber(3, 4);
+
+  Print("Addition: " + (num1 + num2));
+  Print("Subtraction: " + (num1 - num2));
+  Print("Multiplication: " + (num1 * num2));
+  Print("Division: " + (num1 / num2));
+  Print("Implicit: " + (5 * -num2));
+}

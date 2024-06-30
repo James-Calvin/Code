@@ -1,0 +1,27 @@
+/*
+Title: ComplexNumber
+Author: James-Calvin
+Date: 2024-06-30
+Code Version: Pre-alpha
+Description: This file is not meant to be compilable as there are currently no 
+  implementation of Code. This program is only intended to serve as a language 
+  feature brainstorming exercise. This program may not accurately represent or follow
+  the current rules for this language.
+
+  This is to serve the purpose of adding features to classes without creating a new
+  class. Inspired by JavaScript's prototype. 
+*/
+
+/// The "expand" keyword allows for adding to features to a class without directly modifying the class.
+
+// expand will allow any new methods or variables and overloading methods.
+extend BigInteger {
+
+  public static BigInteger Log2(BigInteger number){
+
+  }
+
+  public static BigInteger SquareRoot(BigInteger number){
+    // Implementation for finding integer square root of a big int.
+  }
+}

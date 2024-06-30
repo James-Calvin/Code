@@ -1,0 +1,53 @@
+/*
+Title: ComplexNumber
+Author: James-Calvin
+Date: 2024-06-30
+Code Version: Pre-alpha
+Description: This file is not meant to be compilable as there are currently no 
+  implementation of Code. This program is only intended to serve as a language 
+  feature brainstorming exercise. This program may not accurately represent or follow
+  the current rules for this language.
+
+  This is a partial Code implementation of https://replit.com/@JamesCalvin/Equipment-Challenge
+*/
+
+include StandardLibrary
+
+class Stats {
+  // class-scope variables are private by default
+  integer strength; /// The power of an attack 
+  integer defense; /// The power of mitigating an attack
+
+  public constructor() {
+    strength = 0;
+    defense = 0; 
+  }
+
+  public constructor(integer strength, integer defense) {
+    this.strength = strength;
+    this.defense = defense;
+  }
+
+  public get integer Strength {return strength}
+  public set Strength(integer strength) {this.strength = strength}
+
+  public get integer Defense {return defense}
+ 
+  operator +(Stats a, Stats b) {
+    return new Stats(a.strength + b.strength, a.defense + b.defense)
+  }
+
+  public override string ToString() {
+    return "Strength: " + strength + " Defense: " + defense;
+  }
+
+}
+
+class Chassis {
+  List<Slot> slots = new(); 
+}
+
+interface IEquippable {
+  public Stats GetStats();
+  public get Slot Slot;
+}

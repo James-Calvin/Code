@@ -1,0 +1,30 @@
+/*
+Title: ComplexNumber
+Author: James-Calvin
+Date: 2024-06-30
+Code Version: Pre-alpha
+Description: This file is not meant to be compilable as there are currently no 
+  implementation of Code. This program is only intended to serve as a language 
+  feature brainstorming exercise. This program may not accurately represent or follow
+  the current rules for this language.
+
+   This is an example of in-line markdown documentation rendering.
+*/
+
+/~~
+
+markdown comments /~~ is used (instead of normal multiline 
+comment delimiter like /* because it's unlikely to appear 
+in markdown snippets. Markdown snippets may contain codeblocks 
+which may have a "*/" in them)
+
+# Searching For the Square Root of Large Integers
+
+0. Have integer n.
+1. Start by counting the number of bits the number uses (b).
+2. Increment an integer x until b^x * b^x > n
+3. Binary search between b^x and b^(x-1)
+
+https://www.desmos.com/calculator/zmwbyyv3ab
+
+~~/
