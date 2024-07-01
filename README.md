@@ -1,6 +1,6 @@
 # Introducing Code, the programming language
 
-Code is a homebrew statically typed, object-oriented programming language with a syntax similar to C#. It takes inspiration from various programming languages that I have developed in. The reason I am developing Code is for fun. The main purpose of Code is make building interactive applications with 2D graphics as easy and fun as possible. If you're interested in the specific design of Code, the design documentation was adapted to markdown and uploaded to GitHub which you can find here: [language_design.md](https://github.com/James-Calvin/Code/blob/master/language_design.md).
+Code is a statically typed, object-oriented, homebrew programming language with a syntax similar to C#. It takes inspiration from various programming languages that I have developed in. The reason I am developing Code is for fun. The main purpose of Code is to make building interactive applications with 2D graphics as easy and fun as possible. If you're interested in the specific design of Code, the design documentation was adapted to markdown and uploaded to GitHub which you can find here: [language_design.md](https://github.com/James-Calvin/Code/blob/master/language_design.md).
 
 # Examples of Code code
 
@@ -12,4 +12,4 @@ Again, once I have a working compiler and remember to update this files and have
 
 #
 
-Well, I guess that's all for now.
+Well, I guess that's all for now. Thanks for stopping by! 
