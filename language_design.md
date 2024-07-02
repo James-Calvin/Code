@@ -144,10 +144,10 @@ do {
 
 ### Functions
 
-Functions are declared using the `function` keyword.
+Functions are declared using the return type and ().
 
 ```code
-function add(a, b) {
+Integer add(Integer a, Integer b) {
     return a + b
 }
 ```
