@@ -91,16 +91,19 @@ Code is a statically typed, object-oriented programming language with a syntax s
 Code uses a syntax similar to C#, with some simplifications to enhance readability and ease of use.
 
 ### Data Types
-
+**Currently Implemented (Lexical Analyzer)**
 - `Integer`: Represents whole numbers.
+- `Rational`: Represents fractions.
+- `UnitInterval`: Represents numbers in the range [0,1] using decimal-point notation or percentages.
 - `Float`: Represents floating-point numbers.
 - `Boolean`: Represents true/false values.
-- `Character`: Represents single characters.
 - `String`: Represents sequences of characters.
+- `Void`: Represents non-existant return value of a function.
+- `Color`: Represents colors.
+
+**Consideration for Future Features**
 - `Record`: Represents structured data.
 - `Vector`: Represents 2D or 3D vectors.
-- `UnitInterval`: Represents numbers in the range [0,1].
-- `Color`: Represents colors.
 
 ### Variables and Constants
 
